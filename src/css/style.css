@@ -1,0 +1,86 @@
+body {
+  height: 100vh;
+  margin: 0px;
+}
+
+img {
+  /* transform: rotate(-27deg); */
+}
+
+.tablet {
+  margin: 6px;
+  margin-top: 0px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.tablet-bg {
+  height: 106px;
+  width: 106px;
+  /* position: absolute; */
+  background-color: #6d7171;
+  border-radius: 20px;
+  /* transform: rotate(27deg); */
+  /* z-index: 20; */
+  display: inline-block;
+  transition: all 0.3s;
+  transition-delay: 0.3s;
+}
+
+.tablet-content {
+  height: calc(100% - 8px);
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0px;
+  transform: rotateY(-90deg);
+  transition: all 0.3s;
+}
+
+.animated-logo {
+  position: relative;
+}
+
+.tabs-cover {
+  top: 150px;
+  left: 243px;
+  width: 241px;
+  position: absolute;
+  z-index: 20;
+  transform: rotate(27deg);
+}
+
+.tablet:hover .tablet-bg {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+.tablet:hover .tablet-content {
+  transform: rotateY(0deg);
+  transition-delay: 0.3s;
+}
+
+#svg-curve {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 20;
+}
+
+#text1 {
+  /* background-color: "pink"; */
+}
+
+.tab-icon {
+  width: 70px;
+}
+
+.tab-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(-27deg);
+  text-align: center;
+}
