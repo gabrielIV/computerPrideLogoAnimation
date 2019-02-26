@@ -1,7 +1,8 @@
-body {
+/* body {
   height: 100vh;
   margin: 0px;
-}
+  background-color: pink;
+} */
 
 img {
   /* transform: rotate(-27deg); */
@@ -83,4 +84,17 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(-27deg);
   text-align: center;
+}
+
+.loader-curtain {
+  height: 100vh;
+  background-color: white;
+  width: 100vw;
+}
+
+.home-loader-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.3);
 }
