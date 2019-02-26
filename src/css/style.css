@@ -3,8 +3,12 @@ body {
   margin: 0px;
 }
 
-img {
+.animated-logo-parent {
+  transform: scale(0.87);
+}
+.animated-logo-curve {
   /* transform: rotate(-27deg); */
+  height: 100%;
 }
 
 .tablet {

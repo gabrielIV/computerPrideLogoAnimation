@@ -1,16 +1,16 @@
-let motionPath = MorphSVGPlugin.pathDataToBezier("#mpath", {
+var motionPath = MorphSVGPlugin.pathDataToBezier("#mpath", {
   align: "#text1"
 });
 
-let motionPath2 = MorphSVGPlugin.pathDataToBezier("#mpath2", {
+var motionPath2 = MorphSVGPlugin.pathDataToBezier("#mpath2", {
   align: "#text2"
 });
 
-let motionPath3 = MorphSVGPlugin.pathDataToBezier("#mpath3", {
+var motionPath3 = MorphSVGPlugin.pathDataToBezier("#mpath3", {
   align: "#text3"
 });
 
-let tl = new TimelineMax();
+var tl = new TimelineLite();
 
 tl.from("#text1", 2, {
   bezier: { values: motionPath, type: "cubic", autoRotate: true },
